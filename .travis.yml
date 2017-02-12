@@ -6,4 +6,4 @@ matrix:
     - ./cdep
     - find . -name 'locale.*'
     - cat /home/travis/build/jomof/hello-boost/./.cdep/modules/Findboost.cmake
-    - ./cmakeify
+    - ./cmakeify --cmake-flags "-Dcdep-dependencies_DIR=.cdep/modules"
