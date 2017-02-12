@@ -4,6 +4,4 @@ matrix:
   - os: linux
     script:
     - ./cdep
-    - find . -name 'locale.*'
-    - cat /home/travis/build/jomof/hello-boost/./.cdep/modules/Findboost.cmake
     - ./cmakeify --cmake-flags "-Dcdep-dependencies_DIR=.cdep/modules"
