@@ -1,5 +1,4 @@
 targets: [android]
 android:
-  lib: hello
   ndk:
     platforms: [9, 21]
