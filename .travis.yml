@@ -4,4 +4,4 @@ matrix:
   - os: linux
     script:
     - ./cdep
-    - ./cmakeify --cmake-flags "-Dcdep-dependencies_DIR=.cdep/modules"
+    - ./cmakeify --cmake-flags "-Dcdep-dependencies_DIR=$PWD/.cdep/modules"
